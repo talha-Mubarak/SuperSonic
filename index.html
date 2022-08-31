@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/index.css">
+    <title>Homepage</title>
+</head>
+<body>
+    <nav class="navbar">
+   <label class="logo">  <h1>Supersonic <br> <span> Arena</span> </h1>  <div class="pak-flag"></div> </label>
+   <ul class="list ">
+    <li> <a href="#About">About</a> </li>
+    <li> <a href="#Contact"> Contact</a> </li>
+    <li> <a href="Signup.html">Sign up</a> </li>
+    <li> <a href="Sign.html">Sign in</a> </li>
+    <li> <a href="Details.html"> Details </a> </li>
+   </ul>
+   
+   <div class="hamburger-menu">
+   </div>
+    </nav>
+           <div class="wrapper-Hero">
+            <div class="bk-image">
+                <div class="Hero-heading"> <h1> enter the new gaming world </h1></div>
+                <div class="panels-wrapper">
+                    <div class="panels-placer">
+                        <div class="Solo-panel">
+                            <div class="Solopanel-container">
+                            <div class="heading-solo"> <h2> Lets go! Solo! </h2> </div>
+                            <div class="RoomsSolo-wrapper">
+                            <div class="roomsSolo-details">
+                                <h3> Rooms <br> Details </h3> <br> <h4> 10/9 </h4> 
+                            </div>      
+                            </div>     
+                            </div>
+                        </div>
+                        <div class="Duopanel">
+                            <div class="Duopanel-container">
+                                <div class="heading-duo"><h4> Get set Duo  </h4> </div>
+                            <div class="RoomsDuo-wrapper">
+                                <div class="RoomsDuo-Details">
+                                    <h3> Rooms <br> Details  </h3> <br> <h4> 10/2 </h4>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="Squadpanel">
+                            <div class="Squadpanel-container">
+                                <div class="heading-squad"> <h5> four perfect partners </h5> </div>
+                                <div class="RoomsSquad-wrapper">
+                                    <div class="RoomsSquad-Details">
+                                        <h3>  Rooms <br> Details  </h3> <br> <h4>10/1  </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Tdmpanel">
+                            <div class="Tdmpanel-container">
+                                <div class="heading-Tdm"> <h5>  Either win Either Death </h5> </div>
+                                <div class="RoomsTdm-wrapper">
+                                    <div class="RoomsTdm-Details">
+                                        <h3>  Rooms <br> Details  </h3> <br> <h4>10/1  </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+                <div class="About-section" id="About">
+                    <div class="About-heading"> <h6> About </h6></div>
+                    <div class="About-background">
+                        <div class="background-heading"> <h6>Get Set Go GO  </h6> </div>
+                        <div class="About-para"> <p> We are An organization based in pakistan <br>  trying to promote e-sports in pakistan </p></div>
+                    </div>
+                </div>
+                <div class="Contact-wrapper" id="Contact">
+                    <div class="Contact-heading"> <h6>Want to Contact </h6></div>
+                    <div class="Contact-bgwrapper">
+                        <div class="left-wrapper">
+                            <div class="left"> 
+                                <div class="handles-wrapper">
+                                    <div class="handles-heading"> <h6> you can contact us on <br> our social media handles: </h6></div>
+                                    <div class="handles-details">
+                                        <h6>Telegram</h6>
+                                        <h6>Youtube</h6>
+                                        <h6>Instagram</h6>
+                                        <h6> Facebook </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rightbox-wrapper">
+                            <div class="rightbox">
+                                <div class="rightbox-heading"> <h6> Or Send a message directly <br> here </h6></div>
+                                <div class="form-wrapper">
+                                    <div class="form-details">
+                                        <form>
+                                            <input type="email"  class="Email-id" placeholder="Email">
+                                          <textarea name="" id="" cols="30" rows="10"></textarea>
+                                          <button type="submit"> Submit </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <video  autoplay loop muted class="carlo">
+                        <source src="./Video/video.mp4" type="video/mp4">
+                      </video> 
+                </div>
+                
+                <script defer >
+                 const hamburger= document.getElementsByClassName('hamburger-menu')[0];
+                 const list = document.getElementsByClassName("list")[0];
+                 hamburger.addEventListener('click',()=>{
+                    list.classList.toggle("active");
+                 })
+                </script>
+                
+                </body>
+</html>

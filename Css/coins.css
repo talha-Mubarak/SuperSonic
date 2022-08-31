@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Eater&family=Happy+Monkey&family=Jolly+Lodger&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    font-family: 'IM Fell Double Pica SC', serif;
+    background-color: #D9D9D9;
+}
+.coinbox-wrapper{
+    top: 20%;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+ position: absolute;
+ left: 10%;
+}
+.coin-box{
+    width: 300px;
+    position: relative;
+    height: 200px;
+    margin-left: 20px;
+}
+.coin-box h2{
+    margin-top: 5px;
+    text-align: center;
+}
+.coin-image{
+    margin-top: 5%;
+    margin-left: 37%;
+    height:80px;
+    width: 80px;
+    background-image: url("images/goldcoin.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.coin-box button{
+    left: 25%;
+    margin-top: 5px;
+    position: absolute;
+    background: #D9D9D9;
+    padding: 20px;
+    border: none;
+}
+@media screen and (max-width:480px) {
+    .heading h1{
+        text-align: center; 
+        font-size: 1rem;
+    }
+    .coinbox-wrapper{
+        top: 20%;
+        height: 400px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+     position: absolute;
+     left: -2%;
+    }
+    .coin-image {
+        margin-top: 5%;
+        margin-left: 30%;
+        height: 40px;
+        width: 40px;
+        background-image: url(images/goldcoin.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .coin-box{
+        width: 200px;
+        height: 200px;
+    }   
+  
+    .coin-box button{
+        left: 0;
+        margin-top: 15px;
+        position: absolute;
+        background: #D9D9D9;
+        padding: 5px;
+    }
+    .coin-box h2{
+        font-size: 1rem;
+        margin-top: 5px;
+        text-align: center;
+    }
+}
+@media screen and (min-width:480px) and (max-width:810px) {
+  
+  
+  .coinbox-wrapper{
+    top: 20%;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: -7%;
+  }
+    .coin-image{
+        margin-top: 5%;
+        margin-left: 52px;
+        height:80px;
+        width: 80px;
+        background-image: url("images/goldcoin.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .coin-box button{
+        left: 25%;
+        margin-top: 15px;
+        position: absolute;
+        background: #D9D9D9;
+        padding: 5px;
+    }
+    .coin-box {
+        width: 300px;
+        position: relative;
+        height: 200px;
+        margin-left: 72px;
+    }
+}

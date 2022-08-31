@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box  ;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Roboto Slab', serif;
+}
+.cards-wrapper{
+    display: flex;
+   width: 100%;
+   align-items: left;
+ justify-content: center;
+}
+.card{
+  
+    position: relative;
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+.card .cicle{
+    border-radius: 20px;
+    overflow-x: hidden;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+}
+.card .circle::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #d83133;
+    clip-path: circle(120px at center);
+    transition
+}
+
+.card:hover .circle::before{
+    clip-path: circle(420px at center);
+    background-color:#d83133;
+    border-radius:20px;
+}
+.card img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 200px;
+    pointer-events: none;
+  transition: 0.5s;
+}
+.card:hover img{
+    left: 70%;
+    height: 250px;
+}
+.card .content{
+position: relative;
+width: 60%;
+padding: 76px 32px 101px 19px;
+transition: 0.5s;
+opacity: 0;
+visibility: hidden;
+}
+.card:hover .content{
+     left: 0;
+     opacity: 1;
+visibility:visible;
+}
+.content h2{
+    padding-bottom: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding-left: 50px;
+}
+.card .content  p{
+    margin-top: 5px;
+     color: #fff;
+}
+.card .content  a{
+    position: relative;
+    color: #fff;
+    width: 100px;
+    height: 50px;
+    padding-top: 15px;
+    border-radius: 10px;
+    background: #fff;
+    color: #111;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+}
+@media screen and (max-width:991px)  {
+    
+
+    .card{
+        width: auto;    
+        max-width: 350px;
+        align-items: flex-start;
+    }
+    .card:hover{
+        height: 350px;
+    }
+    .card .content{
+        width: 100%;
+        left: 0;
+        padding: 30px;
+    }
+    .card:hover img{
+        top: 85%;
+        left: 50%;
+        height: 100px;
+    }
+}
+@media screen and (max-width:480px) {
+      .card .content{
+        padding: 20px;
+      }
+}

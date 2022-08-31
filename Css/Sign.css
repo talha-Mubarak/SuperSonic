@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Eater&family=Happy+Monkey&family=Jolly+Lodger&display=swap');
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+ display: flex;
+}
+.left-box{
+    position: relative;
+    height: 100vh;
+    width: 50%;
+    background: #E3E3E3;
+    font-family: 'Inter', sans-serif;
+}
+.heading{
+    padding-top: 20px;
+    text-align: center;
+}
+.form-wrapper{
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    text-align: center;
+    width: 300px;
+    height: 400px;
+}
+input{
+    text-align: center;
+}
+
+input{
+ margin-top: 30px;
+}
+.right-box{
+    height: 100vh;
+    width: 50%;
+   position: relative;
+}
+.logo{
+    position: absolute;
+    left: 30%;
+    background-image: url("images/logo.png");
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bottom-box{
+    bottom: 5%;
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    background:linear-gradient(#F0E0E0,#FFFFFF);
+}
+.heading-bottom{
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+.para{
+    font-size: 50px;
+    padding-top: 50px;
+    padding-left: 180px;
+    font-family: 'Jolly Lodger', cursive;
+}
+.btn{
+    margin-top: 10px;
+}
+@media screen and (max-width:600px) {
+    .heading {
+        padding-top: 12px;
+        text-align: center;
+    }
+    .form-wrapper {
+        left: -15%;
+        top: 10%;
+    }
+  
+    .heading {
+        font-size: 10px ;
+        padding-top: 12px;
+        text-align: center;
+    }
+    form h1{
+        font-size: 15px;
+    }
+    .logo {
+        position: absolute;
+        top: -1%;
+        left: -1%;
+        background-image: url("images/logo.png");
+        width: 167px;
+        height: 162px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    input {
+        margin-top: 30px;
+        width: 100px;
+    }
+    .form-wrapper {
+        position: absolute;
+        left: -7%;
+        top: 17%;
+        text-align: center;
+        width: 213px;
+        height: 400px;
+    }
+ 
+   
+    .para {
+        font-size: 20px;
+        padding-top: 34px;
+        padding-left: 30px;
+        font-family: 'Jolly Lodger', cursive;
+    }
+    .bottom-box {
+    bottom: 29%;
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    background: linear-gradient(#F0E0E0,#FFFFFF);
+}
+}
+@media screen and (min-width:480px) and (max-width:810px) {
+  body{
+    overflow-y: hidden;
+  }
+    .form-wrapper {
+        position: absolute;
+        left: 14%;
+        top: 15%;
+        text-align: center;
+        width: 300px;
+        height: 400px;
+    }
+    .logo {
+        position: absolute;
+        left: 25%;
+        background-image: url("images/logo.png");
+        width: calc();
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .bottom-box {
+        bottom: 40%;
+        position: absolute;
+        width: 100%;
+        background: linear-gradient(#F0E0E0,#FFFFFF);
+    }
+
+    .para {
+        font-size: 38px;
+        padding-top: 34px;
+        padding-left: 115px;
+        font-family: 'Jolly Lodger', cursive;
+    }
+}
+/*     font-family: 'IM Fell Double Pica SC', serif;
+
+    font-family: 'Inter', sans-serif; */
